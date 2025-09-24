@@ -1,4 +1,4 @@
 FROM openjdk:24
-COPY ./target/classes/com /tmp/com
 WORKDIR /tmp
-ENTRYPOINT ["java", "com.napier.devops.App"]
+COPY target/*.jar /app/app.jar
+ENTRYPOINT ["java","-jar","/app/app.jar"]
