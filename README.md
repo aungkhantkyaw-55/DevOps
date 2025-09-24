@@ -4,4 +4,4 @@
 [![Releases](https://img.shields.io/github/release/aungkhantkyaw-55/DevOps/all.svg?style=flat-square)](https://github.com/aungkhantkyaw-55/DevOps/releases)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/aungkhantkyaw-55/DevOps/main.yml?branch=master)
 # DevOps
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/<aungkhantkyaw-55>/<DevOps>/<actions/workflows/main.yml>/<branch>?style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/<aungkhantkyaw-55>/<DevOps>/<actions/workflows/main.yml>/<develop>?style=flat-square)
