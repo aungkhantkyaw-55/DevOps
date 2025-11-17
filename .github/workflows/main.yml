@@ -20,7 +20,4 @@ jobs:
       - name: Package and Run docker compose
         run: |
           mvn package -DskipTests
-          docker compose up -d
-          docker compose ps
-          docker compose logs --tail=50
-          docker compose down
+          docker compose up --abort-on-container-exit
