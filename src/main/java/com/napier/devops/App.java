@@ -5,8 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class App
-{
+public class App {
     private Connection con;
 
     // Updated connect method
@@ -53,11 +52,10 @@ public class App
     }
 
     // Main method updated to use command line args or default localhost
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         App app = new App();
 
-        if(args.length < 2){
+        if (args.length < 2) {
             // Default host: localhost:33060, delay 30000ms (30s)
             app.connect("localhost:33060", 30000);
         } else {
@@ -77,10 +75,8 @@ public class App
     }
 
     // Print multiple employees
-    public void printSalaries(ArrayList<Employee> employees)
-    {
-        if (employees == null)
-        {
+    public void printSalaries(ArrayList<Employee> employees) {
+        if (employees == null) {
             System.out.println("No employees");
             return;
         }
@@ -100,10 +96,8 @@ public class App
     }
 
     // Print a single employee
-    public void displayEmployee(Employee emp)
-    {
-        if (emp == null)
-        {
+    public void displayEmployee(Employee emp) {
+        if (emp == null) {
             System.out.println("No employee data");
             return;
         }
@@ -127,4 +121,9 @@ public class App
     public ArrayList<Employee> getSalariesByDepartment(Department dept) {
         return new ArrayList<>(); // Replace with real implementation
     }
+
+    public Employee getEmployee(int i) {
+        return null;  // Return null as a placeholder
+    }
+
 }
