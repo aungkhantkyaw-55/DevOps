@@ -9,5 +9,7 @@ COPY test_db/*.dump /tmp/
 # Scripts and SQL files in this folder are executed on container startup.
 # This is specific to MySQL.
 COPY test_db/employees.sql /docker-entrypoint-initdb.d
+# Add remote access grant script (executed on container startup)
+COPY remote-access.sql /docker-entrypoint-initdb.d/
 # Set the root password
 ENV MYSQL_ROOT_PASSWORD example
