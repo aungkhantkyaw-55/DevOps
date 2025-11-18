@@ -17,9 +17,9 @@
     <dependencies>
         <!-- MySQL Connector -->
         <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <version>9.4.0</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.18</version>
         </dependency>
 
         <!-- JUnit 5 API and Engine -->
@@ -50,12 +50,13 @@
                 </configuration>
             </plugin>
 
-            <!-- Assembly plugin for building jar-with-dependencies -->
+            <!-- Assembly plugin for building devops.jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+                    <finalName>devops</finalName>
                     <archive>
                         <manifest>
                             <mainClass>com.napier.devops.App</mainClass>
@@ -64,6 +65,7 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
+                    <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
                 <executions>
                     <execution>
