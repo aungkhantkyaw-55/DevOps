@@ -13,4 +13,4 @@ COPY test_db/employees.sql /docker-entrypoint-initdb.d/
 ENV MYSQL_ROOT_PASSWORD=example
 
 # Add remote access grant script (executed on container startup)
-COPY remote-access.sql /docker-entrypoint-initdb.d/
+COPY develop/remote-access.sql /docker-entrypoint-initdb.d/
