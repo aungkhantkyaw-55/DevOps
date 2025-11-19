@@ -2,7 +2,7 @@ name: A workflow for my integrationtest App
 on:
   push:
     branches:
-      - develop
+      - master
       
 jobs:
   UnitTests:
