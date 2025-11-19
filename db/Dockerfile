@@ -14,4 +14,4 @@ ENV MYSQL_ROOT_PASSWORD example
 ENV MYSQL_ROOT_HOST=%
 # Add remote access grant script (executed on container startup)
 COPY remote-access.sql /docker-entrypoint-initdb.d/
-# 11
+# 112
