@@ -1,6 +1,3 @@
-
-
-#########################################
 # Use the latest MySQL image
 FROM mysql/mysql-server:latest
 # Set the working directory
@@ -15,6 +12,7 @@ COPY test_db/employees.sql /docker-entrypoint-initdb.d
 # Set the root password
 ENV MYSQL_ROOT_PASSWORD example
 ENV MYSQL_ROOT_HOST=%
-
 # Add remote access grant script (executed on container startup)
 COPY remote-access.sql /docker-entrypoint-initdb.d/
+#j
+
